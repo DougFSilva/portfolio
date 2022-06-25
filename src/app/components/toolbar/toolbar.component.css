@@ -1,0 +1,89 @@
+.container{
+  width: 100%;
+  height: auto;
+}
+
+.toolbar{
+  background: rgb(34,97,172);
+  background: radial-gradient(circle, rgba(34,97,172,1) 5%, rgba(14,14,46,1) 48%, rgba(3,3,6,1) 65%);
+  width: 100vw;
+  height: 5vw;
+  min-height: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.myname{
+  margin-left: .7rem;
+  font-size: 1.5em;
+  cursor: pointer;
+  text-shadow: 2px 2px black ;
+}
+
+.list{
+  margin-right: .7rem;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.list-item{
+  margin-left: 1em;
+  cursor: pointer;
+  text-shadow: 2px 2px black ;
+}
+
+.list-item-selected{
+  margin-left: 1em;
+  cursor: pointer;
+  color: brown;
+  text-shadow: 2px 2px black ;
+  transform: scale(1.15);
+}
+
+.list-item:hover{
+  transform: scale(1.1);
+  color: brown;
+}
+
+.button-menu{
+  margin-right: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.button-menu-icon{
+  color: white;
+  transform: scale(1.5);
+}
+
+.button-menu-icon:hover{
+  transform: scale(1.7);
+  color:brown;
+}
+
+.button-menu-item{
+  font-weight: bold;
+}
+
+.button-menu-item:hover{
+
+  color: brown;
+  font-size: 16px;
+}
+
+
+
+@media only screen and (max-width: 768px){
+
+  .list{
+    display: none;
+  }
+
+  .button-menu{
+    display: block;
+  }
+}

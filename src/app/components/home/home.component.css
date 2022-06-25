@@ -1,0 +1,43 @@
+.container{
+  width: 100%;
+  height: auto;
+
+}
+
+.div-header{
+  width: 100vw;
+  height: auto;
+  position: relative;
+  display: inline-block;
+
+}
+
+.background-home{
+  filter:brightness(50%);
+  width: 100%;
+}
+
+.div-header-description{
+  position: absolute;
+  width: 50vw;
+  top:10vw;
+  right: 25vw;
+
+  font-size: 10vw;
+  color: white;
+  text-shadow: 5px 5px black;
+  text-align: center;
+}
+
+#myname{
+  font-family: 'Aldrich';
+  font-size: 5vw;
+  margin-bottom: 6vw;
+}
+
+#myfunction{
+  font-family: 'Aldrich';
+  font-size: 5vw;
+}
+
+

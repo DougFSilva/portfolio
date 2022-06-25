@@ -1,0 +1,89 @@
+.container{
+  width: 100vw;
+  height: auto;
+}
+
+.timeline{
+  margin: 2rem auto 0 auto;
+  width: 60vw;
+}
+
+.timeline-grid{
+  width: 100%;
+  margin: 1rem auto 0 auto;
+}
+
+.timeline-grid-study-title{
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.timeline-grid-work-title{
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.timeline-grid-title-text{
+  font-size: 3vw;
+  font-weight: bold;
+  color: white;
+}
+
+.timeline-grid-study{
+  border-radius: 10px;
+  background-color: aquamarine;
+  box-shadow: 5px 5px black;
+}
+
+.timeline-grid-study:hover{
+  background-color:lightblue;
+  transform: scale(1.01);
+}
+
+.timeline-grid-line{
+  border-radius: 5px;
+  background-color: green;
+}
+
+.timeline-grid-work{
+  border-radius: 10px;
+  background-color: blue;
+  box-shadow: 5px 5px black;
+}
+
+.timeline-grid-work:hover{
+  transform: scale(1.01);
+  background-color:lightblue;
+
+}
+
+.timeline-grid-disable{
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.timeline-grid-itens{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.study-modality-key{
+  font-weight: bold;
+  color:brown;
+  display: inline;
+  margin-right: .5em;
+}
+
+.study-modality-value{
+  font-weight: bold;
+  display: inline;
+}
+
+
+@media only screen and (max-width:768px){
+  .timeline{
+    width: 90vw;
+    }
+}

@@ -1,0 +1,29 @@
+<div class="container">
+  <mat-toolbar class="toolbar mat-elevation-z4" color="primary">
+    <div>
+      <span class="myname" (click)="ngOnInit()"> <> Douglas Ferreira</span>
+    </div>
+
+    <div>
+      <ul class="list">
+        <li *ngIf="listItemSelected[0]" class="list-item-selected" id="home" (click)="linkSelect($event)">Home</li>
+        <li *ngIf="listItemSelected[0] == false" class="list-item" id="home" (click)="linkSelect($event)">Home</li>
+        <li *ngIf="listItemSelected[1]" class="list-item-selected" id="portfolio" (click)="linkSelect($event)">Portfólio</li>
+        <li *ngIf="listItemSelected[1] == false" class="list-item" id="portfolio" (click)="linkSelect($event)">Portfólio</li>
+        <li *ngIf="listItemSelected[2]" class="list-item-selected" id="curriculo" (click)="linkSelect($event)">Currículo</li>
+        <li *ngIf="listItemSelected[2] == false" class="list-item" id="curriculo" (click)="linkSelect($event)">Currículo</li>
+        <li *ngIf="listItemSelected[3]" class="list-item-selected" id="sobremin" (click)="linkSelect($event)">Sobre mim</li>
+        <li *ngIf="listItemSelected[3] == false" class="list-item" id="sobremin" (click)="linkSelect($event)">Sobre mim</li>
+      </ul>
+    </div>
+
+    <button class="button-menu" mat-button [matMenuTriggerFor]="beforeMenu"><mat-icon class="button-menu-icon">menu</mat-icon></button>
+    <mat-menu class="menu" #beforeMenu="matMenu" xPosition="before">
+      <button mat-menu-item (click)="menuSelect($event)" value="home" class="button-menu-item">Home</button>
+      <button mat-menu-item (click)="menuSelect($event)" value="portfolio" class="button-menu-item">Portfólio</button>
+      <button mat-menu-item (click)="menuSelect($event)" value="curriculo" class="button-menu-item">Currículo</button>
+      <button mat-menu-item (click)="menuSelect($event)" value="sobremin" class="button-menu-item">Sobre mim</button>
+    </mat-menu>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+</div>
