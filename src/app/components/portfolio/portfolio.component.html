@@ -1,1 +1,29 @@
-<p>portfolio works!</p>
+<div class="container">
+
+  <header class="header">
+      <h1 class="header-title">PORTFÓLIO</h1>
+      <span class="p-input-icon-left">
+          <i class="pi pi-search"></i>
+          <input class="input-search" type="text" pInputText placeholder="Encontre um projeto" (keyup)="filterProject($event)" />
+      </span>
+  </header>
+
+  <div class="content">
+
+    <mat-card *ngFor="let project of filterProjects" class="card mat-elevation-z8">
+      <mat-card-header>
+          <mat-card-title>{{project.title}}</mat-card-title>
+          <mat-card-subtitle>{{project.subtitle}} </mat-card-subtitle>
+      </mat-card-header>
+      <img class="card-img" mat-card-image [src]="project.img" alt="Samcs image">
+      <mat-card-content>
+        <ul *ngFor="let description of project.description"class="card-list">
+          <li>{{description}}</li>
+        </ul><br>
+        <h2 class="vejamais">Veja mais</h2>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+
+</div>

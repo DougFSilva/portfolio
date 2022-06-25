@@ -5,39 +5,48 @@
 }
 
 .div-header{
+  background-image: url("../../../assets/backgroud-home.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  margin:auto auto;
   width: 100vw;
-  height: auto;
-  position: relative;
-  display: inline-block;
-
-}
-
-.background-home{
-  filter:brightness(50%);
-  width: 100%;
-}
-
-.div-header-description{
-  position: absolute;
-  width: 50vw;
-  top:10vw;
-  right: 25vw;
-
-  font-size: 10vw;
+  height: 90vh;
   color: white;
   text-shadow: 5px 5px black;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
 }
 
-#myname{
+.myname{
+
   font-family: 'Aldrich';
-  font-size: 5vw;
+  font-size: 4.5em;
+  margin-top: 3em;
   margin-bottom: 6vw;
 }
 
-#myfunction{
+.myfunction{
   font-family: 'Aldrich';
-  font-size: 5vw;
+  font-size: 3em;
+}
+
+
+@media only screen and (max-width: 768px){
+
+  .myname{
+    font-size: 3.5em;
+    line-height: 1em;
+  }
+
+  .myfunction{
+    font-size: 2em;
+  }
+
 }
 
 

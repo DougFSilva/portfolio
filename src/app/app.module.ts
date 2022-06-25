@@ -9,6 +9,10 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import {InputTextModule} from 'primeng/inputtext';
+
 
 
 
@@ -36,7 +40,10 @@ import { SobreminComponent } from './components/sobremin/sobremin.component';
     MatButtonToggleModule,
     MatMenuModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    MatSidenavModule,
+    MatListModule,
+    InputTextModule,
 
   ],
   providers: [],

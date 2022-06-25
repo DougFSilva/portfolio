@@ -1,0 +1,87 @@
+.container{
+  width: 100vw;
+}
+
+header{
+  margin-top: 1em;
+  background-image: url("../../../assets/backgroud-portfolio.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 20em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header-title{
+  margin-left: 1em;
+  font-family: 'Aldrich';
+  font-size: 4.5em;
+  color: white;
+  text-shadow: 5px 5px black;
+
+}
+
+.input-search{
+  margin-bottom:.5em;
+  margin-right: 2em;
+  width: 15em;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card{
+  width: 35em;
+  background-color: mediumaquamarine;
+  background: rgb(34,150,172);
+  margin: 2em;
+}
+
+.card-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card:hover{
+  transform: scale(1.02);
+}
+
+.card-list{
+  margin-left: -2em;
+}
+
+.vejamais{
+  margin:auto auto;
+  color:brown;
+  float: right;
+}
+
+@media only screen and (max-width: 768px){
+
+  .header{
+    height: 50vh;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .header-title{
+    font-size: 3em;
+    margin-left: .5rem;
+  }
+
+  .input-search{
+    margin-left: .5rem;
+  }
+
+
+}
+

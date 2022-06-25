@@ -5,7 +5,6 @@
 
 .toolbar{
   background: rgb(34,97,172);
-  background: radial-gradient(circle, rgba(34,97,172,1) 5%, rgba(14,14,46,1) 48%, rgba(3,3,6,1) 65%);
   width: 100vw;
   height: 5vw;
   min-height: 2em;
@@ -48,7 +47,6 @@
 }
 
 .button-menu{
-  margin-right: 1rem;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -65,19 +63,28 @@
   color:brown;
 }
 
-.button-menu-item{
+.sidenav-content{
+  background: rgb(34,97,172);
+  height: auto;
+  width: 56vw;
+}
+
+.sidenav-link-icon{
+  color: white;
+  margin-right: .5em;
+}
+
+.sidenav-link{
+  color: white;
   font-weight: bold;
 }
 
-.button-menu-item:hover{
-
-  color: brown;
-  font-size: 16px;
-}
-
-
 
 @media only screen and (max-width: 768px){
+
+  .myname{
+    font-size: 1em;
+  }
 
   .list{
     display: none;
