@@ -14,6 +14,9 @@ import {MatListModule} from '@angular/material/list';
 import {InputTextModule} from 'primeng/inputtext';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatTabsModule} from '@angular/material/tabs';
+
 
 
 import {GalleriaModule} from 'primeng/galleria';
@@ -51,8 +54,9 @@ import { SamcsComponent } from './components/portfolio/samcs/samcs.component';
     InputTextModule,
     MatButtonModule,
     GalleriaModule,
-    MatDividerModule
-
+    MatDividerModule,
+    MatExpansionModule,
+    MatTabsModule
 
   ],
   providers: [],

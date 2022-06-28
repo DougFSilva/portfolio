@@ -59,7 +59,7 @@ header{
   font-weight: 500;
 }
 
-.contet-text{
+.content-text{
   font-size: 1rem;
 }
 
@@ -94,8 +94,22 @@ header{
   width: 90%;
   margin: auto;
 }
+a:link{
+  text-decoration: none;
+}
 
+.grid-links-github{
+  width: 50%;
+}
 
+.grid-links-github-tile:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.grid-links-github-img{
+  width: 100%;
+}
 
 
 @media only screen and (max-width:768px){
@@ -125,6 +139,12 @@ header{
 
   .gallery{
     width: 98%;
+    margin: auto;
+  }
+
+  .grid-links-github{
+    width: 80%;
+    display: block;
     margin: auto;
   }
 
