@@ -21,13 +21,13 @@ export class PortfolioComponent implements OnInit {
     this.addProject('SAMCS',
     'Sistema de gerenciamento e controle de acesso escolar',
     [],
-    '../../../assets/samcs_principal.jpg'
+    'assets/samcs-principal.jpg'
     );
 
     this.addProject('Em breve',
     'Em processo de desenvolvimento',
     [],
-    '../../../assets/new-project.jpg'
+    'assets/new-project.jpg'
     );
   }
 

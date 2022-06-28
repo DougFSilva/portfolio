@@ -76,9 +76,88 @@
 
 .sidenav-link{
   color: white;
-  font-weight: bold;
+  font-weight: 500;
 }
 
+.footer-container{
+  margin-top: 3rem;
+  width: 100%;
+  height: auto;
+  background: url("../../../assets/backgroud-footer.jpg");
+  padding: 2rem;
+}
+
+.footer-card{
+  margin: auto;
+  width: 80%;
+  height: auto;
+  background-color: darkslategray;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-sobre{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.footer-links{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.footer-contato{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.footer-social{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+.footer-title{
+  color: brown;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer-text{
+  font-size: 1rem;
+  color: white;
+}
+
+.footer-text-link{
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.linkedin-img{
+  height: 1.2rem;
+
+}
 
 @media only screen and (max-width: 768px){
 
@@ -92,5 +171,14 @@
 
   .button-menu{
     display: block;
+  }
+
+  .footer-container{
+    background-position: right;
+  }
+
+  .footer-card{
+    flex-direction: column;
+    width: 100%;
   }
 }

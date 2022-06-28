@@ -13,7 +13,7 @@ export class ToolbarComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    this.router.navigate(['portfolio']);
+    this.router.navigate(['portfolio/samcs']);
     this.listItemSelected = [true,false,false,false];
   }
 

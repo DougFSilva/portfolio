@@ -12,8 +12,11 @@ import {MatCardModule} from '@angular/material/card';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {InputTextModule} from 'primeng/inputtext';
+import {MatButtonModule} from '@angular/material/button';
+import {MatDividerModule} from '@angular/material/divider';
 
 
+import {GalleriaModule} from 'primeng/galleria';
 
 
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
@@ -21,6 +24,7 @@ import { HomeComponent } from './components/home/home.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { CurriculoComponent } from './components/curriculo/curriculo.component';
 import { SobreminComponent } from './components/sobremin/sobremin.component';
+import { SamcsComponent } from './components/portfolio/samcs/samcs.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,8 @@ import { SobreminComponent } from './components/sobremin/sobremin.component';
     HomeComponent,
     PortfolioComponent,
     CurriculoComponent,
-    SobreminComponent
+    SobreminComponent,
+    SamcsComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,6 +49,10 @@ import { SobreminComponent } from './components/sobremin/sobremin.component';
     MatSidenavModule,
     MatListModule,
     InputTextModule,
+    MatButtonModule,
+    GalleriaModule,
+    MatDividerModule
+
 
   ],
   providers: [],

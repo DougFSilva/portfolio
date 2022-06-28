@@ -10,7 +10,7 @@
 
   <div class="content">
 
-    <mat-card *ngFor="let project of filterProjects" class="card mat-elevation-z8">
+    <mat-card *ngFor="let project of filterProjects" class="card mat-elevation-z8" routerLink="/portfolio/{{project.title | lowercase}}">
       <mat-card-header>
           <mat-card-title>{{project.title}}</mat-card-title>
           <mat-card-subtitle>{{project.subtitle}} </mat-card-subtitle>
@@ -20,7 +20,7 @@
         <ul *ngFor="let description of project.description"class="card-list">
           <li>{{description}}</li>
         </ul><br>
-        <h2 class="vejamais">Veja mais</h2>
+        <h2 class="vejamais">Clique e veja mais!</h2>
       </mat-card-content>
     </mat-card>
 

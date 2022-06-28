@@ -1,0 +1,176 @@
+<div class="container">
+  <header class="header">
+    <h1 class="header-title">SAMCS</h1>
+    <h5 class="header-subtitle">School access management and control system</h5>
+  </header>
+    <a
+      class="link"
+      href="https://dougfsilva.github.io/WPSAMCS/"
+      target="_blank"
+    >
+      <button
+        class="button-link mat-elevation-z4"
+        mat-raised-button
+        color="primary"
+      >
+        Acesse o projeto!
+      </button>
+    </a>
+  <div class="div-content">
+
+    <div class="content">
+      <h3 class="content-text">
+        O sistema <span class="emphasis">SAMCS</span> tem como objetivo gerenciar o acesso de alunos e
+        funcionários à escola através de catraca liberada por crachá com tag
+        <span class="emphasis">RFID</span>, com possibilidade de lançamento de ocorrências, faltas, atrasos e
+        com isso a geração de relatórios e alarmes de faltas.
+      </h3>
+      <h3 class="content-text">
+        O <span class="emphasis">backend</span> é desenvolvido em java com o framework <span class="emphasis">Spring</span>, utilizando os
+        módulos:
+        <ul class="content-list">
+          <li>Spring Boot</li>
+          <li>Spring Data</li>
+          <li>Spring Security</li>
+          <li>Spring Web</li>
+        </ul>
+        A <span class="emphasis">autenticação</span> é realizada através do método <span class="emphasis">JWT</span>(Json Web Tokens) e o
+        banco de dados utilizado é o <span class="emphasis">MySQL</span>
+      </h3>
+
+      <h3>
+        O <span class="emphasis">frontend</span> é uma single page application desenvolvida com o Framework
+        <span class="emphasis">Angular</span>
+      </h3>
+
+      <h3>A catraca é controlada por um microcontrolador <span class="emphasis">ESP32</span></h3>
+      <h3>Veja abaixo algumas telas da aplicação</h3>
+
+      <div class="gallery">
+        <p-galleria
+        [value]="images"
+        [visible]="true"
+        [responsiveOptions]="responsiveOptions2"
+        [containerStyle]="{ 'max-width': '100%' }"
+        [numVisible]="9"
+        [circular]="true"
+        [fullScreen]="false"
+        [showItemNavigators]="true"
+        [baseZIndex]="100000"
+        [showThumbnails]="true"
+
+      >
+        <ng-template pTemplate="item" let-item >
+          <img
+            [src]="item.previewImageSrc"
+            style="width: 100%; display: block"
+          />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block; width: 40%" />
+          </div>
+        </ng-template>
+      </p-galleria>
+      </div>
+
+    </div>
+
+    <div class="content">
+      <h1 class="content-title">FUNCIONAMENTO</h1>
+      <h3 class="content-text">Primeiramente um curso é cadastrado no sistema, e em seguida são cadastradas turmas
+        referentes a esse curso. Para cada turma é configurado:
+        <ul class="content-list">
+          <li>Período</li>
+          <li>Dia de aula</li>
+          <li>Horário de entrada</li>
+          <li>Horário de saída</li>
+          <li>Horário de saída para o almoço (para turma em período integral)</li>
+          <li>Horário de retorno do almoço (para turma em período integral)</li>
+          <li>Tolerância de entrada</li>
+          <li>Tolerância de saída</li>
+        </ul>
+        Em seguida, são cadastrados alunos para essa turma, preenchendo os dados solicitados e a foto do aluno (fotografada pelo próprio sistema).
+        Com essas informações é gerado um PDF para impressão do crachá. Por fim é cadastrado a tag RFID do crachá na tela do aluno.
+
+      <h3 class="content-text">Exemplo de crachá gerado pelo sistema:</h3>
+      <img class="samcs-cracha-img" src="assets/samcs-cracha.jpg">
+      </h3>
+      <h3 class="content-text">Ao passar o cachá no leitor, a informação da tag RFID é lida pelo ESP32 através de protocolo
+        Wiegand, este por sua vez encaminha uma requisição HTTP com a informação da tag no URI para o servidor.  </h3>
+      <img class="samcs-http-requisacao" src="assets/samcs-http-requisicao.png">
+      <h3 class="content-text">Com a informação da TAG o servidor realiza os seguintes passos para autorizar ou bloquear o acesso:
+      </h3>
+      <img class="samcs-fluxograma" src="assets/samcs-fluxograma.png">
+      <h3 class="content-text">Veja abaixo um resumo do esquema do projeto</h3>
+      <img class="samcs-diagrama-img"src="assets/samcs-diagrama.png">
+    </div>
+
+    <div class="content">
+      <h1 class="content-title">FUNCIONALIDADES</h1>
+      <h3 class="content-text">No sistema SAMCS é possível:
+        <ul class="content-list">
+          <li>Cadastrar, editar e deletar cursos</li>
+          <li>Upload de imagem personalizada para cada curso</li>
+          <li>Cadatrar, editar e deletar turmas</li>
+          <li>Upload de imagem personalizada para cada turma</li>
+          <li>Geração automática de turma de formandos e evadidos para cada turma curso criado</li>
+          <li>Configuração de horário de entrada, saída, saída para almoço e retorno de almoço para cada turma</li>
+          <li>Configuração de tolerância de entrada e saída para cada turma</li>
+          <li>Calendário para configuração de dias de aula para cada turma</li>
+          <ul>
+            <li>Com possibilidade de clonar calendário de outras turmas</li>
+            <li>Configuração por dia</li>
+            <li>Configuração de por período de tempo e dia da semana</li>
+          </ul>
+          <li>Cadastrar, editar e deletar alunos</li>
+          <li>Tirar foto do aluno pela webcam</li>
+          <li>Geração de PDF para impressão de crachá 267x200 com data de validade ajustada individualmente</li>
+          <li>Cadastrar, editar e deletar ocorrências de alunos</li>
+          <ul>
+            <li>Filtrar ocorrências</li>
+            <li>Ocorrências podem ser configuradas como bloqueante ou não bloqueante de acesso</li>
+            <li>Com definição de privacidade de ocorrência pública ou privado (privado somente usuário com perfil 'ADMIN' poder visualizar, excluir e editar)</li>
+          </ul>
+          <li>Geração de PDF de relatório das ocorrências</li>
+          <li>Geração de PDF de relatório e ponto eletrônico</li>
+          <li>Solicitação de impressão de crachá</li>
+          <li>Indicação visual no card do aluno quando este estiver presente na escola</li>
+          <li>Importar lista de alunos do excel diretamente para a aplicação</li>
+          <li>Cadastrar, editar e deletar funcionários</li>
+          <li>Tirar foto do funcionário pela webcam</li>
+          <li>Geração de PDF para impressão de crachá de funcionário</li>
+          <li>Cadastrar, editar e deletar usuários do sistema</li>
+          <ul>
+            <li>Perfil ADMIN - Autorização para todas as operações do sistema</li>
+            <li>Perfil OPERATOR - Limitado a algumas operações destinadas ao guarda</li>
+            <li>Perfil USER - Somente visualização pública do sistema</li>
+          </ul>
+        </ul>
+        <li>Tela de alarmes indicando quando o aluno ultrapassar 15% de faltas</li>
+        <ul>
+          <li>Com indicação de data, turma, aluno e porcentagem de faltas</li>
+        </ul>
+        <li>Tela de operação, onde serão listadas as solicitações para impressão de crachá</li>
+      <li>Tela geral dos aluno com filtragem por nome, matricula e tag</li>
+      <li>Tela geral dos formandos com filtragem por nome e curso</li>
+      <li>Tela geral dos evadidos com filtragem por nome e curso</li>
+      <li>Tela home</li>
+      <ul>
+        <li>Indicação de quantidade de alunos presentes na escola</li>
+        <li>Gráfico de indicação quantidade de alunos por cidade</li>
+        <li>Gráfico de indicação quantidade de alunos por sexo</li>
+        <li>Gráfico de indicação quantidade de alunos por curso</li>
+        <li>Gráfico de indicação quantidade de alunos por empresa (estagiários)</li>
+        <li>Gráfico de indicação quantidade de alunos por idade</li>
+        <li>Tabela indicando os aniversariantes do dia</li>
+      </ul>
+      </h3>
+
+
+    </div>
+
+    <h3 class="content-text">Exemplo de crachá gerado pelo sistema:</h3>
+
+  </div>
+</div>

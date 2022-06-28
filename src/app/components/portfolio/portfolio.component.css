@@ -1,10 +1,9 @@
 .container{
-  width: 100vw;
+  width: 100%;
 }
 
 header{
-  margin-top: 1em;
-  background-image: url("../../../assets/backgroud-portfolio.jpg");
+  background-image: url("../../../assets/backgroud-home.jpg");
   background-size: cover;
   background-position: center;
   height: 20em;
@@ -41,6 +40,7 @@ header{
   background-color: mediumaquamarine;
   background: rgb(34,150,172);
   margin: 2em;
+  cursor: pointer;
 }
 
 .card-header{

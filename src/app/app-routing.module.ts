@@ -1,3 +1,4 @@
+import { SamcsComponent } from './components/portfolio/samcs/samcs.component';
 import { SobreminComponent } from './components/sobremin/sobremin.component';
 import { CurriculoComponent } from './components/curriculo/curriculo.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
@@ -18,6 +19,10 @@ const routes: Routes = [
       {
         path:"portfolio",
         component: PortfolioComponent
+      },
+      {
+        path:"portfolio/samcs",
+        component: SamcsComponent
       },
       {
         path:"curriculo",
