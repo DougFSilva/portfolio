@@ -16,7 +16,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatTabsModule} from '@angular/material/tabs';
-
+import {MatSelectModule} from '@angular/material/select';
 
 
 import {GalleriaModule} from 'primeng/galleria';
@@ -26,7 +26,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { CurriculoComponent } from './components/curriculo/curriculo.component';
-import { SobreminComponent } from './components/sobremin/sobremin.component';
+import { SobremimComponent } from './components/sobremim/sobremim.component';
 import { SamcsComponent } from './components/portfolio/samcs/samcs.component';
 
 @NgModule({
@@ -36,7 +36,7 @@ import { SamcsComponent } from './components/portfolio/samcs/samcs.component';
     HomeComponent,
     PortfolioComponent,
     CurriculoComponent,
-    SobreminComponent,
+    SobremimComponent,
     SamcsComponent,
   ],
   imports: [
@@ -56,7 +56,8 @@ import { SamcsComponent } from './components/portfolio/samcs/samcs.component';
     GalleriaModule,
     MatDividerModule,
     MatExpansionModule,
-    MatTabsModule
+    MatTabsModule,
+    MatSelectModule
 
   ],
   providers: [],

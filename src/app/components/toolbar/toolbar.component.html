@@ -12,8 +12,8 @@
         <li *ngIf="listItemSelected[1] == false" class="list-item" id="portfolio" (click)="linkSelect($event)">Portfólio</li>
         <li *ngIf="listItemSelected[2]" class="list-item-selected" id="curriculo" (click)="linkSelect($event)">Currículo</li>
         <li *ngIf="listItemSelected[2] == false" class="list-item" id="curriculo" (click)="linkSelect($event)">Currículo</li>
-        <li *ngIf="listItemSelected[3]" class="list-item-selected" id="sobremin" (click)="linkSelect($event)">Sobre mim</li>
-        <li *ngIf="listItemSelected[3] == false" class="list-item" id="sobremin" (click)="linkSelect($event)">Sobre mim</li>
+        <li *ngIf="listItemSelected[3]" class="list-item-selected" id="sobremim" (click)="linkSelect($event)">Sobre mim</li>
+        <li *ngIf="listItemSelected[3] == false" class="list-item" id="sobremim" (click)="linkSelect($event)">Sobre mim</li>
       </ul>
     </div>
 
@@ -38,7 +38,7 @@
           <mat-icon class="sidenav-link-icon">description</mat-icon>
           <span class="sidenav-link">Curriculo</span>
         </a>
-        <a mat-list-item routerLink="sobremin" (click)="drawer.toggle()">
+        <a mat-list-item routerLink="sobremim" (click)="drawer.toggle()">
           <mat-icon class="sidenav-link-icon">assignment_ind</mat-icon>
           <span class="sidenav-link">Sobre mim </span>
         </a>
@@ -65,7 +65,7 @@
         <h3 class="footer-text-link" id="home" (click)="linkSelect($event)"> Home </h3>
         <h3 class="footer-text-link" id="portfolio" (click)="linkSelect($event)"> Portfólio </h3>
         <h3 class="footer-text-link" id="curriculo" (click)="linkSelect($event)"> Currículo </h3>
-        <h3 class="footer-text-link" id="sobremin" (click)="linkSelect($event)"> Sobre min </h3>
+        <h3 class="footer-text-link" id="sobremim" (click)="linkSelect($event)"> Sobre min </h3>
 
 
       </div>

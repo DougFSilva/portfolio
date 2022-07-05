@@ -1,5 +1,5 @@
 import { SamcsComponent } from './components/portfolio/samcs/samcs.component';
-import { SobreminComponent } from './components/sobremin/sobremin.component';
+import { SobremimComponent } from './components/sobremim/sobremim.component';
 import { CurriculoComponent } from './components/curriculo/curriculo.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { NgModule } from '@angular/core';
@@ -29,8 +29,8 @@ const routes: Routes = [
         component: CurriculoComponent
       },
       {
-        path:"sobremin",
-        component: SobreminComponent
+        path:"sobremim",
+        component: SobremimComponent
       },
 
     ]

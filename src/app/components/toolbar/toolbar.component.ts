@@ -7,13 +7,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./toolbar.component.css']
 })
 export class ToolbarComponent implements OnInit {
-  listItem: string[] = ['home','portfolio','curriculo','sobremin'];
+  listItem: string[] = ['home','portfolio','curriculo','sobremim'];
   listItemSelected: boolean[] = [false,false,false,false]
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    this.router.navigate(['curriculo']);
+    this.router.navigate(['sobremim']);
     this.listItemSelected = [true,false,false,false];
   }
 

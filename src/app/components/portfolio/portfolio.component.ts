@@ -13,32 +13,21 @@ export class PortfolioComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.getProjects();
+    this.setProjects();
     this.filterProjects = this.allProjects;
   }
 
-  getProjects():void{
-    this.addProject('SAMCS',
+  setProjects():void{
+    this.allProjects.push(new Project('SAMCS',
     'Sistema de gerenciamento e controle de acesso escolar',
     [],
     'assets/samcs-principal.jpg'
-    );
-
-    this.addProject('Em breve',
+    ));
+    this.allProjects.push(new Project('Em breve',
     'Em processo de desenvolvimento',
     [],
     'assets/new-project.jpg'
-    );
-  }
-
-  addProject(title:string, subtitle:string, description:string[], img:string):void{
-    let project: Project = {
-      title: title,
-      subtitle: subtitle,
-      description: [] = description,
-      img: img
-    };
-    this.allProjects.push(project);
+    ));
   }
 
   filterProject(event: any):void{

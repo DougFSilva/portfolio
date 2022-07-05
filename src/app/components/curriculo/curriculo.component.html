@@ -1,44 +1,76 @@
 <div class="container">
   <header class="header">
     <h1 class="header-title">CURRÍCULO</h1>
-  </header>
+</header>
 
-  <mat-card class="card mat-elevation-z4">
-    <mat-accordion>
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title class="panel-title">
-            <mat-icon class="panel-title-icon">school</mat-icon>EDUCAÇÃO
-          </mat-panel-title>
-          <mat-panel-description> </mat-panel-description>
-        </mat-expansion-panel-header>
-        <mat-card class="panel-card mat-elevation-z4">
-          <div class="panel-card-header">
-            <h3 class="panel-card-header-title">
-              TÉCNOLOGO EM ANALISE E DESENVOLVIMENTO DE SISTEMAS
-            </h3>
-          </div>
-          <div class="panel-card-content">
-            <div class="panel-card-content-key-value">
-              <h3 class="panel-card-content-key">ESCOLA:</h3>
-              <h3 class="panel-card-content-value">CRUZEIRO DO SUL VIRTUAL</h3>
+  <div class="content">
+    <mat-tab-group>
+
+      <mat-tab label="FORMAÇÃO">
+        <mat-form-field appearance="legacy" class="filter">
+          <mat-label>Filtar por</mat-label>
+          <mat-select (selectionChange)="applyFilterCourses($event)">
+            <mat-option value="todos">Todos</mat-option>
+            <mat-option value="eletroeletronica">Eletroeletrônica</mat-option>
+            <mat-option value="tecnologia">Técnologia da informação</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <div  class="cards-formacao">
+          <div *ngFor="let course of filterCourses" class="card-formacao mat-elevation-z4" [ngStyle]="{'background-color': course.cardColor}">
+            <div class="card-formacao-header">
+              <div>
+                <span class="course-modality">{{course.modality}}</span>
+                <span class="course-ch">{{course.ch}}h</span>
+              </div>
+              <span class="course-title">{{course.title}}</span>
+            </div>
+            <div class="card-formacao-content">
+              <div class="card-formacao-content-item">
+                <span class="card-formacao-content-item-key">ESCOLA:</span>
+                <span class="card-formacao-content-item-value">{{course.school}}</span>
+              </div>
+              <div class="card-formacao-content-item">
+                <span class="card-formacao-content-item-key">INÍCIO:</span>
+                <span class="card-formacao-content-item-value">{{course.initialDate}}</span>
+              </div>
+              <div class="card-formacao-content-item">
+                <span class="card-formacao-content-item-key">CONCLUSÃO:</span>
+                <span class="card--formacao-content-item-value">{{course.conclusionDate}}</span>
+              </div>
             </div>
           </div>
-        </mat-card>
-      </mat-expansion-panel>
-
-      <mat-expansion-panel
-        (opened)="panelOpenState = true"
-        (closed)="panelOpenState = false"
-      >
-        <mat-expansion-panel-header>
-          <mat-panel-title class="panel-title">
-            <mat-icon class="panel-title-icon">work</mat-icon>EXPERIÊNCIA
-          </mat-panel-title>
-          <mat-panel-description> </mat-panel-description>
-        </mat-expansion-panel-header>
-        <p>I'm visible because I am open</p>
-      </mat-expansion-panel>
-    </mat-accordion>
-  </mat-card>
+        </div>
+      </mat-tab>
+      <mat-tab label="EXPERIÊNCIA">
+        <div class="cards-experiencia">
+          <div *ngFor="let experience of experiences" class="card-experiencia" [ngStyle]="{'background-color': experience.cardColor}">
+            <div class="card-experiencia-header">
+              <span class="experience-role">{{experience.role}}</span>
+            </div>
+            <div class="card-experience-content">
+              <div class="card-experience-content-item">
+                <span class="card-experience-content-item-key">Empresa:</span>
+                <span class="card-experience-content-item-value">{{experience.company}}</span>
+              </div>
+              <div class="card-experience-content-item">
+                <span class="card-experience-content-item-key">Início do contrato:</span>
+                <span class="card-experience-content-item-value">{{experience.initialDate}}</span>
+              </div>
+              <div class="card-experience-content-item">
+                <span class="card-experience-content-item-key">Fim do contrato:</span>
+                <span class="card-experience-content-item-value">{{experience.finalDate}}</span>
+              </div>
+              <div class="card-experience-content-item">
+                <span class="card-experience-content-item-key">Atividades:</span>
+                <span class="card-experience-content-item-value">{{experience.activities}}</span>
+              </div>
+              <ul>
+                <li *ngFor="let activity of experience.activitiesList">{{activity}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
 </div>

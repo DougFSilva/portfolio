@@ -4,12 +4,13 @@
 }
 
 header {
-  width: 100%;
   background-image: url("../../../assets/backgroud-home.jpg");
   background-size: cover;
   background-position: center;
   height: 20em;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: flex-end;
 }
 
@@ -21,54 +22,146 @@ header {
   text-shadow: 5px 5px black;
 }
 
-.card {
-  width: 70%;
+.content{
+  width: 100%;
+}
+
+.filter{
   display: block;
-  margin: 2rem auto 2rem auto;
+  float: right;
+  width: 20%;
+  margin: 2rem;
 }
 
-.panel-title {
-  font-weight: 500;
-  color: brown;
-  margin-left: 1rem;
-}
-
-.panel-title-icon{
-  margin-right: 1rem;
-}
-
-.panel-card{
-  width: 50%;
-  height: 20%;
-  background-color: aquamarine;
-}
-
-.panel-card-header-title{
-  font-weight: 500;
-  color: blueviolet;
-}
-
-.panel-card-content-key-value{
+.cards-formacao{
+  width: 100%;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 1rem auto 1rem auto;
+}
+
+.card-formacao{
+  width: 32%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  padding: .5rem;
+}
+
+.card-formacao-header{
+  display: flex;
+  flex-direction: column;
+  margin: .6rem 0 .6rem 0;
+}
+
+.course-modality{
+  display: block;
+  float: left;
+  color: green;
+  margin-left: 2%;
+  font-weight: 500;
+  text-align: center;
+}
+
+.course-ch{
+  display: block;
+  float: right;
+  color: red;
+  margin-right: 2%;
+  font-weight: 500;
+  text-align: center;
+}
+
+.course-title{
+  width: 100%;
+  color: brown;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 .6rem 0 .6rem;
+  font-size: 1.05rem;
+
+}
+
+.card-formacao-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 2%;
+}
+
+.card-formacao-content-item{
+  display: flex;
   flex-direction: row;
 }
 
-.panel-card-content-key{
+.card-formacao-content-item-key{
   color: red;
   font-weight: 500;
-  margin-right: 1rem;
 }
 
+.card-formacao-content-item-value{
+  margin-left: .3rem;
+}
 
-@media only screen and (max-width:768px) {
-  .card {
-    width: 98%;
-    display: block;
-    margin: auto;
-  }
+.cards-experiencia{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem auto 2rem auto;
+}
 
-  .header {
+.card-experiencia{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 1rem;
+  border-radius: .5rem;
+  padding: 1rem;
+}
+
+.card-experiencia-header{
+  display: flex;
+  margin: 1rem;
+}
+
+.experience-role{
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color:brown;
+}
+
+.card-experience-content{
+  margin: 1rem;
+}
+
+.card-experience-content-item{
+  display: flex;
+  flex-direction: row;
+}
+
+.card-experience-content-item-key{
+  color: red;
+  font-weight: 500;
+}
+
+.card-experience-content-item-value{
+  margin-left: .3rem;
+}
+
+@media only screen and (max-width:768px){
+
+  .header{
     height: 50vh;
     flex-direction: column;
     align-content: flex-end;
@@ -76,13 +169,24 @@ header {
     align-items: flex-start;
   }
 
-  .header-title {
+  .header-title{
     font-size: 3em;
     margin-left: .5rem;
   }
 
-  .panel-card{
+  .filter{
+    width: 90%;
+    margin: 1rem;
+  }
+  .card-formacao{
     width: 100%;
-    }
+    margin: 1rem 1rem 0 1rem;
+  }
 
+  .card-experiencia{
+    width: 100%;
+    margin: 1rem;
+    border-radius: .5rem;
+    padding: 0;
+  }
 }
