@@ -1,3 +1,4 @@
+import { LinksComponent } from './components/links/links.component';
 import { SamcsComponent } from './components/portfolio/samcs/samcs.component';
 import { SobremimComponent } from './components/sobremim/sobremim.component';
 import { CurriculoComponent } from './components/curriculo/curriculo.component';
@@ -32,11 +33,13 @@ const routes: Routes = [
         path:"sobremim",
         component: SobremimComponent
       },
+      {
+        path:"links",
+        component: LinksComponent
+      },
 
     ]
-
   }
-
 ];
 
 @NgModule({

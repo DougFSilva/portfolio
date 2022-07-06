@@ -44,6 +44,7 @@
 .list-item:hover{
   transform: scale(1.1);
   color: brown;
+  transition-duration: 1s;
 }
 
 .button-menu{

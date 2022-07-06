@@ -28,6 +28,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { CurriculoComponent } from './components/curriculo/curriculo.component';
 import { SobremimComponent } from './components/sobremim/sobremim.component';
 import { SamcsComponent } from './components/portfolio/samcs/samcs.component';
+import { LinksComponent } from './components/links/links.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { SamcsComponent } from './components/portfolio/samcs/samcs.component';
     CurriculoComponent,
     SobremimComponent,
     SamcsComponent,
+    LinksComponent,
   ],
   imports: [
     BrowserModule,

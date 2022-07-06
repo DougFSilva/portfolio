@@ -1,9 +1,66 @@
 <div class="container">
-  <div class="div-header">
-      <h1 class="myname"> Douglas Ferreira</h1>
-      <h1 class="myfunction"> Desenvolvedor Web</h1>
+  <header class="header">
+      <h1 class="header-title">DOUGLAS FERREIRA DA SILVA</h1>
 
+  </header>
+  <div class="content-pc">
+    <mat-grid-list cols="4" rowHeight="1:1" gutterSize=".3rem">
+      <mat-grid-tile class="tile-portfolio mat-elevation-z8"
+          [colspan]="2"
+          [rowspan]="2"
+          [ngStyle]="{'background-color':'red'}">
+          <h1 class="tile-title">PORTFÓLIO</h1>
+
+      </mat-grid-tile>
+      <mat-grid-tile class="tile-curriculo mat-elevation-z8"
+          [colspan]="2"
+          [rowspan]="1"
+          [ngStyle]="{'background-color':'green'}">
+        <h1 class="tile-title">CURRÍCULO</h1>
+      </mat-grid-tile>
+      <mat-grid-tile class="tile-sobremim mat-elevation-z8"
+          [colspan]="1"
+          [rowspan]="1"
+          [ngStyle]="{'background-color':'blue'}">
+        <h1 class="tile-title">SOBREMIM</h1>
+      </mat-grid-tile>
+      <mat-grid-tile class="tile-links mat-elevation-z8"
+          [colspan]="1"
+          [rowspan]="1"
+          [ngStyle]="{'background-color':'violet'}">
+        <h1 class="tile-title">LINKS</h1>
+      </mat-grid-tile>
+    </mat-grid-list>
   </div>
 
+  <div class="content-mobile">
+    <mat-grid-list cols="4" rowHeight="1:1" gutterSize=".8rem">
+      <mat-grid-tile class="tile-portfolio mat-elevation-z8"
+          [colspan]="4"
+          [rowspan]="3"
+          [ngStyle]="{'background-color':'red'}">
+          <h1 class="tile-title">PORTFÓLIO</h1>
 
+      </mat-grid-tile>
+      <mat-grid-tile class="tile-curriculo mat-elevation-z8"
+          [colspan]="4"
+          [rowspan]="2"
+          [ngStyle]="{'background-color':'green'}">
+        <h1 class="tile-title">CURRÍCULO</h1>
+      </mat-grid-tile>
+      <mat-grid-tile class="tile-sobremim mat-elevation-z8"
+          [colspan]="4"
+          [rowspan]="2"
+          [ngStyle]="{'background-color':'blue'}">
+        <h1 class="tile-title">SOBREMIM</h1>
+      </mat-grid-tile>
+      <mat-grid-tile class="tile-links mat-elevation-z8"
+          [colspan]="4"
+          [rowspan]="2"
+          [ngStyle]="{'background-color':'violet'}">
+        <h1 class="tile-title">LINKS</h1>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
 </div>
+

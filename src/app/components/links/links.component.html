@@ -1,0 +1,57 @@
+<div class="container">
+
+  <header class="header">
+      <h1 class="header-title">LINKS</h1>
+  </header>
+  <div class="content">
+
+    <div class="content-block">
+      <div class="content-title">
+        <h1>Para estudar e estudar...</h1>
+      </div>
+      <div class="cards">
+        <a *ngFor="let link of studyLinks" href={{link.link}} target="_blank">
+          <div class="card mat-elevation-z4" [ngStyle]="{'background-color': link.cardColor}">
+            <h3 class="card-text">
+              {{link.linkText}}
+            </h3>
+            <mat-icon class="card-icon">{{link.icon}}</mat-icon>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="content-block">
+      <div class="content-title">
+        <h1>Para buscar novas oportunidades de emprego...</h1>
+      </div>
+      <div class="cards">
+        <a *ngFor="let link of jobLinks" href={{link.link}} target="_blank">
+          <div class="card mat-elevation-z4" [ngStyle]="{'background-color': link.cardColor}">
+            <h3 class="card-text">
+              {{link.linkText}}
+            </h3>
+            <mat-icon class="card-icon">{{link.icon}}</mat-icon>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="content-block">
+      <div class="content-title">
+        <h1>Outros links...</h1>
+      </div>
+      <div class="cards">
+        <a *ngFor="let link of severalLinks" href={{link.link}} target="_blank">
+          <div class="card mat-elevation-z4" [ngStyle]="{'background-color': link.cardColor}">
+            <h3 class="card-text">
+              {{link.linkText}}
+            </h3>
+            <mat-icon class="card-icon">{{link.icon}}</mat-icon>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
