@@ -33,14 +33,6 @@
   text-shadow: 2px 2px black ;
 }
 
-.list-item-selected{
-  margin-left: 1em;
-  cursor: pointer;
-  color: brown;
-  text-shadow: 2px 2px black ;
-  transform: scale(1.15);
-}
-
 .list-item:hover{
   transform: scale(1.1);
   color: brown;

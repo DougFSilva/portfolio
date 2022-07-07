@@ -77,3 +77,22 @@ header{
 a {
   text-decoration: none;
 }
+
+@media only screen and (max-width:768px){
+
+  .header{
+    height: 50vh;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .header-title{
+    font-size: 3em;
+    margin-left: .5rem;
+  }
+  .cards{
+    justify-content: space-around;
+  }
+}

@@ -6,24 +6,16 @@
 
     <div>
       <ul class="list">
-        <li *ngIf="listItemSelected[0]" class="list-item-selected" id="home" (click)="linkSelect($event)">Home</li>
-        <li *ngIf="listItemSelected[0] == false" class="list-item" id="home" (click)="linkSelect($event)">Home</li>
-        <li *ngIf="listItemSelected[1]" class="list-item-selected" id="portfolio" (click)="linkSelect($event)">Portfólio</li>
-        <li *ngIf="listItemSelected[1] == false" class="list-item" id="portfolio" (click)="linkSelect($event)">Portfólio</li>
-        <li *ngIf="listItemSelected[2]" class="list-item-selected" id="curriculo" (click)="linkSelect($event)">Currículo</li>
-        <li *ngIf="listItemSelected[2] == false" class="list-item" id="curriculo" (click)="linkSelect($event)">Currículo</li>
-        <li *ngIf="listItemSelected[3]" class="list-item-selected" id="sobremim" (click)="linkSelect($event)">Sobre mim</li>
-        <li *ngIf="listItemSelected[3] == false" class="list-item" id="sobremim" (click)="linkSelect($event)">Sobre mim</li>
-        <li *ngIf="listItemSelected[4]" class="list-item-selected" id="links" (click)="linkSelect($event)">Links</li>
-        <li *ngIf="listItemSelected[4] == false" class="list-item" id="links" (click)="linkSelect($event)">Links</li>
+        <li  class="list-item" routerLink="home">Home</li>
+        <li  class="list-item" routerLink="portfolio">Portfólio</li>
+        <li  class="list-item" routerLink="curriculo">Currículo</li>
+        <li  class="list-item" routerLink="sobremim">Sobre mim</li>
+        <li  class="list-item" routerLink="links">Links</li>
       </ul>
     </div>
 
-
     <button class="button-menu" mat-button (click)="drawer.toggle()"><mat-icon class="button-menu-icon">menu</mat-icon></button>
-
   </mat-toolbar>
-
 
   <mat-drawer-container class="sidenav" autosize>
     <mat-drawer #drawer position="end" class="sidenav-content" mode="over">
@@ -51,8 +43,8 @@
       </mat-nav-list>
     </mat-drawer>
 
-
     <router-outlet></router-outlet>
+
   </mat-drawer-container>
   <footer class="footer-container">
     <mat-card class="footer-card">
@@ -68,11 +60,11 @@
 
       <div class="footer-links">
         <h2 class ="footer-title">Links:</h2>
-        <h3 class="footer-text-link" id="home" (click)="linkSelect($event)"> Home </h3>
-        <h3 class="footer-text-link" id="portfolio" (click)="linkSelect($event)"> Portfólio </h3>
-        <h3 class="footer-text-link" id="curriculo" (click)="linkSelect($event)"> Currículo </h3>
-        <h3 class="footer-text-link" id="sobremim" (click)="linkSelect($event)"> Sobre min </h3>
-        <h3 class="footer-text-link" id="links" (click)="linkSelect($event)"> Links </h3>
+        <h3 class="footer-text-link" routerLink="home"> Home </h3>
+        <h3 class="footer-text-link" routerLink="portfolio"> Portfólio </h3>
+        <h3 class="footer-text-link" routerLink="curriculo"> Currículo </h3>
+        <h3 class="footer-text-link" routerLink="sobremim"> Sobre min </h3>
+        <h3 class="footer-text-link" routerLink="links"> Links </h3>
 
       </div>
       <div class="footer-contato">
@@ -84,7 +76,6 @@
       <div class="footer-social">
         <h2 class ="footer-title">Social:</h2>
         <h3 class="footer-text-link"> <img class="linkedin-img"src="assets/linkedin.png"> Link </h3>
-
       </div>
     </mat-card>
   </footer>

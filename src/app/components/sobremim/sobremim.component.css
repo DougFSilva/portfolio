@@ -66,4 +66,8 @@ header {
     margin-left: .5rem;
   }
 
+  .content{
+    width: 92%;
+  }
+
 }
