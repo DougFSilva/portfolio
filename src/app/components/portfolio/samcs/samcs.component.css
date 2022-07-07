@@ -52,6 +52,11 @@ header{
   float: right;
   width: 20rem;
   margin:0 1rem 1rem 0;
+
+}
+
+.button-link-text{
+  animation: animate 1s linear infinite;
 }
 
 .content-title{
@@ -110,6 +115,19 @@ a:link{
 .grid-links-github-img{
   width: 100%;
 }
+
+@keyframes animate{
+  0%{
+    opacity: 0.2;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0.2;
+  }
+}
+
 
 
 @media only screen and (max-width:768px){
