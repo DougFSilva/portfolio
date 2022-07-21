@@ -30,345 +30,7 @@ export class CurriculoComponent implements OnInit {
         'Cruzeiro do sul virtual',
         'Outubro de 2020',
         ' Outubro de 2022',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'SQL com MySQL: manipule e consulte dados',
-        'tecnologia',
-        12,
-        'ALURA',
-        '',
-        'Fevereiro de 2021',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'Consultas SQL: avançando o SQL com MySQL',
-        'tecnologia',
-        14,
-        'ALURA',
-        '',
-        'Fevereiro de 2021',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'Comandos DML: manipulação de dados com MySQL',
-        'tecnologia',
-        10,
-        'ALURA',
-        '',
-        'Março de 2021',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'Procedures SQL: executando código no MySQL',
-        'tecnologia',
-        14,
-        'ALURA',
-        '',
-        'Março de 2021',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'Administração do MySQL: segurança e otimização do banco',
-        'tecnologia',
-        16,
-        'ALURA',
-        '',
-        'Março de 2021',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'Java OO: Entendendo a Orientação a Objetos',
-        'tecnologia',
-        8,
-        'ALURA',
-        '',
-        'Dezembro de 2020',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'Java e java.lang: programe com a classe Object e String',
-        'tecnologia',
-        12,
-        'ALURA',
-        '',
-        'Novembro de 2021',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'Java JRE e JDK: compile e execute o seu programa',
-        'tecnologia',
-        8,
-        'ALURA',
-        '',
-        'Novembro de 2021',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'Certificação Java SE 7 Programmer I: criando e usando Arrays',
-        'tecnologia',
-        8,
-        'ALURA',
-        '',
-        'Março de 2022',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'Java Exceções: aprenda a criar, lançar e controlar exceções',
-        'tecnologia',
-        12,
-        'ALURA',
-        '',
-        'Novembro de 2021',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'JavaScript: explorando a linguagem',
-        'tecnologia',
-        10,
-        'ALURA',
-        '',
-        'Dezembro de 2021',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'JavaScript: Arrays',
-        'tecnologia',
-        10,
-        'ALURA',
-        '',
-        'Dezembro de 2021',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'JavaScript: tipos, variáveis e funções',
-        'tecnologia',
-        12,
-        'ALURA',
-        '',
-        'Dezembro de 2021',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'JAVASCRIPT: programando a orientação a objetos',
-        'tecnologia',
-        10,
-        'ALURA',
-        '',
-        'Dezembro de 2021',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'Rest com NodeJS: API com Express e MySQL',
-        'tecnologia',
-        8,
-        'ALURA',
-        '',
-        'janeiro de 2022',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'HTML5 e CSS3 parte 1: crie uma página da Web',
-        'tecnologia',
-        8,
-        'ALURA',
-        '',
-        'Abril de 2021',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'HTML5 e CSS3 parte 2: posicionamento, listas e navegação',
-        'tecnologia',
-        8,
-        'ALURA',
-        '',
-        'Abril de 2021',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'HTML5 e CSS3 parte 3: trabalhando com formulários e tabelas',
-        'tecnologia',
-        8,
-        'ALURA',
-        '',
-        'Abril de 2021',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'HTML5 e CSS3 parte 4: avançando no CSS',
-        'tecnologia',
-        8,
-        'ALURA',
-        '',
-        'Abril de 2021',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'HTTP: Entendendo a web por baixo dos panos',
-        'tecnologia',
-        14,
-        'ALURA',
-        '',
-        'Abril de 2021',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'Flexbox: posicione elementos na tela',
-        'tecnologia',
-        9,
-        'ALURA',
-        '',
-        'Abril de 2021',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'PHP: conceitos, lidando com dados, loops e mais',
-        'tecnologia',
-        6,
-        'ALURA',
-        '',
-        'Março de 2021',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'Avançando com PHP: Arrays, Strings, Função e Web',
-        'tecnologia',
-        8,
-        'ALURA',
-        '',
-        'Março de 2021',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'Orientação a Objetos com PHP: Classes, métodos e atributos',
-        'tecnologia',
-        8,
-        'ALURA',
-        '',
-        'Março de 2021',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'Avançando com Orientação a Objetos com PHP: Herança, Polimorfismo e Interfaces',
-        'tecnologia',
-        10,
-        'ALURA',
-        '',
-        'Abril de 2021',
-        'lightskyblue'
-      )
-    );
-
-    this.courses.push(
-      new Course(
-        'Educação continuada',
-        'PHP e MySQL: Criando uma webapp',
-        'tecnologia',
-        10,
-        'ALURA',
-        '',
-        'Abril de 2021',
-        'lightskyblue'
+        'goldenrod'
       )
     );
 
@@ -381,7 +43,7 @@ export class CurriculoComponent implements OnInit {
         'UNIP Sorocaba/SP',
         'janeiro de 2014',
         'Julho de 2016',
-        'lightsteelblue'
+        'goldenrod'
       )
     );
 
@@ -394,7 +56,7 @@ export class CurriculoComponent implements OnInit {
         'SENAI "Antônio Ermírio de Moraes"',
         'Janeiro de 2009',
         'Dezembro de 2010',
-        'lightsteelblue'
+        'silver'
       )
     );
 
@@ -407,9 +69,508 @@ export class CurriculoComponent implements OnInit {
         'SENAI "Antônio Ermírio de Moraes"',
         'Janeiro de 2006',
         'Dezembro de 2007',
-        'lightsteelblue'
+        'silver'
       )
     );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Certificação Java SE 7 Programmer I: Conhecendo o java',
+        'tecnologia',
+        8,
+        'ALURA',
+        '',
+        'Julho de 2022',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Certificação Java SE 7 Programmer I: Criando e usando Arrays',
+        'tecnologia',
+        8,
+        'ALURA',
+        '',
+        'Março de 2022',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Certificação Java SE 7 Programmer I: lidando com exceções',
+        'tecnologia',
+        8,
+        'ALURA',
+        '',
+        'Julho de 2022',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Certificação Java SE 7 Programmer I: tipos de Dados',
+        'tecnologia',
+        8,
+        'ALURA',
+        '',
+        'Julho de 2022',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Java OO: Entendendo a Orientação a Objetos',
+        'tecnologia',
+        8,
+        'ALURA',
+        '',
+        'Dezembro de 2020',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Java Polimorfismo: entenda herança e interfaces',
+        'tecnologia',
+        16,
+        'ALURA',
+        '',
+        'Julho de 2022',
+        'antiquewhite'
+      )
+    );
+
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Java e java.lang: programe com a classe Object e String',
+        'tecnologia',
+        12,
+        'ALURA',
+        '',
+        'Novembro de 2021',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Java JRE e JDK: compile e execute o seu programa',
+        'tecnologia',
+        8,
+        'ALURA',
+        '',
+        'Novembro de 2021',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Java e java.io: Streams, Reader e Writers',
+        'tecnologia',
+        12,
+        'ALURA',
+        '',
+        'Julho de 2022',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Java e java.util: Coleções, Wrappers e Lambda expressions',
+        'tecnologia',
+        12,
+        'ALURA',
+        '',
+        'Julho de 2022',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Java 8: conheça as novidades dessa versão',
+        'tecnologia',
+        12,
+        'ALURA',
+        '',
+        'Julho de 2022',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Java Exceções: aprenda a criar, lançar e controlar exceções',
+        'tecnologia',
+        12,
+        'ALURA',
+        '',
+        'Julho de 2022',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Spring Boot API REST: Construa uma API',
+        'tecnologia',
+        8,
+        'ALURA',
+        '',
+        'Julho de 2022',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Spring Boot API REST: Segurança da API, cache e monitoramento',
+        'tecnologia',
+        12,
+        'ALURA',
+        '',
+        'Julho de 2022',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Git e Github: controle e compartilhe seu código',
+        'tecnologia',
+        6,
+        'ALURA',
+        '',
+        'Julho de 2022',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'SQL com MySQL: manipule e consulte dados',
+        'tecnologia',
+        12,
+        'ALURA',
+        '',
+        'Fevereiro de 2021',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Spring Data JPA: Repositórios, Consultas, Projeções e Specifications',
+        'tecnologia',
+        10,
+        'ALURA',
+        '',
+        'Julho de 2022',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Persistência com JPA: Hibernate',
+        'tecnologia',
+        8,
+        'ALURA',
+        '',
+        'Julho de 2022',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Consultas SQL: avançando o SQL com MySQL',
+        'tecnologia',
+        14,
+        'ALURA',
+        '',
+        'Fevereiro de 2021',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Comandos DML: manipulação de dados com MySQL',
+        'tecnologia',
+        10,
+        'ALURA',
+        '',
+        'Março de 2021',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Procedures SQL: executando código no MySQL',
+        'tecnologia',
+        14,
+        'ALURA',
+        '',
+        'Março de 2021',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Administração do MySQL: segurança e otimização do banco',
+        'tecnologia',
+        16,
+        'ALURA',
+        '',
+        'Março de 2021',
+        'antiquewhite'
+      )
+    );
+
+
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'JavaScript: explorando a linguagem',
+        'tecnologia',
+        10,
+        'ALURA',
+        '',
+        'Dezembro de 2021',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'JavaScript: Arrays',
+        'tecnologia',
+        10,
+        'ALURA',
+        '',
+        'Dezembro de 2021',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'JavaScript: tipos, variáveis e funções',
+        'tecnologia',
+        12,
+        'ALURA',
+        '',
+        'Dezembro de 2021',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'JAVASCRIPT: programando a orientação a objetos',
+        'tecnologia',
+        10,
+        'ALURA',
+        '',
+        'Dezembro de 2021',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Rest com NodeJS: API com Express e MySQL',
+        'tecnologia',
+        8,
+        'ALURA',
+        '',
+        'janeiro de 2022',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'HTML5 e CSS3 parte 1: crie uma página da Web',
+        'tecnologia',
+        8,
+        'ALURA',
+        '',
+        'Abril de 2021',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'HTML5 e CSS3 parte 2: posicionamento, listas e navegação',
+        'tecnologia',
+        8,
+        'ALURA',
+        '',
+        'Abril de 2021',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'HTML5 e CSS3 parte 3: trabalhando com formulários e tabelas',
+        'tecnologia',
+        8,
+        'ALURA',
+        '',
+        'Abril de 2021',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'HTML5 e CSS3 parte 4: avançando no CSS',
+        'tecnologia',
+        8,
+        'ALURA',
+        '',
+        'Abril de 2021',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'HTTP: Entendendo a web por baixo dos panos',
+        'tecnologia',
+        14,
+        'ALURA',
+        '',
+        'Abril de 2021',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Flexbox: posicione elementos na tela',
+        'tecnologia',
+        9,
+        'ALURA',
+        '',
+        'Abril de 2021',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'PHP: conceitos, lidando com dados, loops e mais',
+        'tecnologia',
+        6,
+        'ALURA',
+        '',
+        'Março de 2021',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Avançando com PHP: Arrays, Strings, Função e Web',
+        'tecnologia',
+        8,
+        'ALURA',
+        '',
+        'Março de 2021',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Orientação a Objetos com PHP: Classes, métodos e atributos',
+        'tecnologia',
+        8,
+        'ALURA',
+        '',
+        'Março de 2021',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'Avançando com Orientação a Objetos com PHP: Herança, Polimorfismo e Interfaces',
+        'tecnologia',
+        10,
+        'ALURA',
+        '',
+        'Abril de 2021',
+        'antiquewhite'
+      )
+    );
+
+    this.courses.push(
+      new Course(
+        'Educação continuada',
+        'PHP e MySQL: Criando uma webapp',
+        'tecnologia',
+        10,
+        'ALURA',
+        '',
+        'Abril de 2021',
+        'antiquewhite'
+      )
+    );
+
+
 
     this.courses.push(
       new Course(
@@ -420,7 +581,7 @@ export class CurriculoComponent implements OnInit {
         'ETAP group of companies',
         'Outubro de 2017',
         'Outubro de 2017',
-        'lightsteelblue'
+        'antiquewhite'
       )
     );
 
@@ -433,7 +594,7 @@ export class CurriculoComponent implements OnInit {
         'SIEMENS',
         'Dezembro de 2014',
         'Dezembro de 2014',
-        'lightsteelblue'
+        'antiquewhite'
       )
     );
 
@@ -446,7 +607,7 @@ export class CurriculoComponent implements OnInit {
         'SENAI "Antônio Ermírio de Moraes"',
         'Abril de 2011',
         'Maio de 2011',
-        'lightsteelblue'
+        'antiquewhite'
       )
     );
 
